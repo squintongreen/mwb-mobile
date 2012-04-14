@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <%= processTemplate('_head') %>
+  <body> 
+    <div class="container">
+      <div id="areas" class="row">
+        <!-- Start of page: #areas -->
+        <div id="navbar" data-role="header" data-theme="a">
+	  <div data-role="navbar">
+	    <ul>
+	      <li><a href="#" data-icon="phone">Call</a></li>
+	      <li><a href="#" data-icon="sms">Text</a></li>
+	      <li><a href="#" data-icon="email">Email</a></li>
+	    </ul>
+	  </div><!-- /navbar -->
+        </div><!-- /global-header -->
+
+        <header>
+          <div class="twelve columns">
+            
+    	    <!-- =====  LOGO IMAGE WILL APPEAR HERE (MUST BE 320px X 100px)  ===== -->
+            
+    	    <img src="../images/logo.png" alt="logo image" />
+	    <h3>Atlanta Electrical</h3>
+    	    
+    	    <!-- =====  LOGO IMAGE WILL APPEAR HERE (MUST BE 320px X 100px)  ===== -->
+            
+          </div>
+        </header><!-- /header -->
+        
+        <div id="island-a" class="twelve columns">
+	  <img src="http://placehold.it/290x150&text=ATLANTA+AREA+MAP" alt="290px(w) X 150px(h)" />
+          <p>We proudly serve the greater Atlanta area. Choose a county below to find your neighborhood.</p>
+          <div data-role="collapsible-set" data-theme="a" data-content-theme="a">
+            <% _.each(doc['Service Areas'], function(val, key){ %>
+    	    <div data-role="collapsible" data-theme="a" data-content-theme="a">
+    	      <h4><%= val['Service Area'] %></h4>
+    	      <ul class="loc-list">
+    	        <li><a href="#">Suwanee</a></li>
+    	        <li><a href="#">Lilburn</a></li>
+    	        <li><a href="#">John's Creek</a></li>
+    	        <li><a href="#">Douglasville</a></li>
+    	        <li><a href="#">Norcross</a></li>
+    	        <li><a href="#">Sugar Hill</a></li>
+    	      </ul>
+    	    </div>
+            <% }) %>
+          </div>
+        </div>
+
+        <div id="island-b" class="twelve columns">	
+          <ul class="block-grid two-up">
+            <li><p><a href="about.html" class="nice white medium button">About</a></p></li>
+            <li><p><a href="offers.html" class="nice white medium button">Specials</a></p></li>
+          </ul>
+        </div>
+
+        <a href="index.html" class="nice black medium button">Home</a>
+
+        <div data-role="footer" data-theme="a">
+          <h4>Built with <a href="http://www.scanshowsell.com">ScanShowSell.com</a></h4>
+        </div><!-- /footer -->
+
+      </div><!-- /row -->
+    </div><!-- /container -->
+  </body>
+</html>

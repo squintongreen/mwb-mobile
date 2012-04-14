@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<%=  processTemplate('_head') %>  
+  
+  <body> 
+    <div class="container">
+      <div class="row">
+        <!-- Start of page: #sub-testimonial -->
+        <div id="sub-testimonial">
+	  <div id="navbar" data-role="header">
+	    <div data-role="navbar">
+	      <ul>
+		<li><a href="#" data-icon="phone">Call</a></li>
+		<li><a href="#" data-icon="sms">Text</a></li>
+		<li><a href="#" data-icon="email">Email</a></li>
+	      </ul>
+	    </div>
+	  </div><!-- /navbar -->
+	  
+	  <header>
+	    <div class="twelve columns">
+	      
+	      <!-- =====  LOGO IMAGE WILL APPEAR HERE (MUST BE 320px X 100px)  ===== -->
+	      
+	      <img src="images/logo.png" alt="logo image" />
+	      <h3>Atlanta Electrical</h3>
+	      
+	      <!-- =====  LOGO IMAGE WILL APPEAR HERE (MUST BE 320px X 100px)  ===== -->
+	      
+	    </div>
+	  </header><!-- /header -->
+
+	  <div class="twelve columns" data-theme="a">
+	    <h4>Submit Testimonial</h4>
+	    <!-- =====  SUBMIT TESTIMONIAL FORM  ===== -->
+	    <form class="nice">
+	      <br />
+	      <p>Thank you for taking the time to rate our service. Your feedback is extremely valuable to us.</p>
+	      <fieldset>
+		<label for="name">Name</label>
+		<input type="text" name="name" id="niceFieldssetInput" class="input-text" value="" />
+		<label for="email">Email</label>
+		<input type="text" name="email" id="niceFieldssetInput" class="input-text" value="" />
+		<label for="city">City</label>
+		<input type="text" name="city" id="niceFieldssetInput" class="input-text" value="" />
+		<label for="textarea-a">Comments:</label>
+		<textarea name="textarea" id="niceFieldssetTextarea" placeholder="What would you like to say?"></textarea>
+		<label for="service-rating" class="select">How would you rate our service?</label>
+		<select name="service-rating" id="service-rating" data-theme="a">
+		  <option value="one-star" data-content-theme="d">One Star</option>
+		  <option value="two-stars" data-content-theme="d">Two Stars</option>
+		  <option value="three-stars" data-content-theme="d">Three Stars</option>
+		  <option value="four-stars" data-content-theme="d">Four Stars</option>
+		  <option value="five-stars" data-content-theme="d">Five Stars</option>
+		</select>
+	      </fieldset>
+	      <br />
+	      <p><em>Your email address will not be published.</em></p>
+	      <hr />
+	      <p><a href="#" data-role="button" data-icon="check" data-transition="none" data-theme="d">Submit Testimonial</a></p>
+	      <p><a href="index.html" data-role="button" data-icon="arrow-l" data-transition="none" data-theme="a">Cancel</a></p>
+	    </form>
+	    
+	  </div><!-- /content -->
+        </div><!-- /req-service -->
+
+      </div><!-- /row -->
+    </div><!-- /container -->
+  </body>
+</html>

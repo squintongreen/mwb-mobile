@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <%= processTemplate('_head') %>
+  <body> 
+    <div class="container">
+      <div id="about" class="row">
+        <!-- Start of page: #about -->
+        <div id="navbar" data-role="header" data-theme="a">
+	  <div data-role="navbar">
+	    <ul>
+	      <li><a href="#" data-icon="phone">Call</a></li>
+	      <li><a href="#" data-icon="sms">Text</a></li>
+	      <li><a href="#" data-icon="email">Email</a></li>
+	    </ul>
+	  </div><!-- /navbar -->
+        </div><!-- /global-header -->
+	
+        <header>
+          <div class="twelve columns">
+            
+    	    <!-- =====  LOGO IMAGE WILL APPEAR HERE (MUST BE 320px X 100px)  ===== -->
+            
+    	    <img src="../images/logo.png" alt="logo image" />
+    	    <h3>Atlanta Electrical</h3>
+    	    
+    	    <!-- =====  LOGO IMAGE WILL APPEAR HERE (MUST BE 320px X 100px)  ===== -->
+            
+          </div>
+        </header><!-- /header -->
+	
+        <div id="island-a" class="twelve columns">
+
+          <h4>Company Profile</h4>
+          <hr />
+          <% _.each(doc['company-profile'], function(val, key){ %>
+          <h5><%= key %></h5>
+          <p><%= val %>.</p>
+          <% }) %>
+
+          <h4>Contact information</h4>
+          <% _.each(doc['contact-information'], function(val, key){ %>
+          <h5><%= key %></h5>
+          <p><%= val %>.</p>
+          <% }) %>
+        </div>
+	
+        <div id="island-b" class="twelve columns">
+	  <ul class="block-grid two-up">
+	    <li><p><a href="services.html" class="nice white medium button">Services</a></p></li>
+	    <li><p><a href="areas.html" class="nice white medium button">Areas</a></p></li>
+	  </ul>
+        </div>
+
+	<a href="index.html" class="nice black medium button">Home</a>
+
+
+        <div data-role="footer" data-theme="a">
+          <h4>Built with <a href="http://www.scanshowsell.com">ScanShowSell.com</a></h4>
+        </div><!-- /footer -->
+
+      </div><!-- /row -->
+    </div><!-- /container -->
+  </body>
+</html>

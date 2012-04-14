@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <%=  processTemplate('_head') %>
+  <body> 
+    <div class="container">
+      <div id="services" class="row">
+        <!-- Start of page: #services -->
+        <div id="navbar" data-role="header" data-theme="a">
+	  <div data-role="navbar">
+	    <ul>
+	      <li><a href="#" data-icon="phone">Call</a></li>
+	      <li><a href="#" data-icon="sms">Text</a></li>
+	      <li><a href="#" data-icon="email">Email</a></li>
+	    </ul>
+	  </div><!-- /navbar -->
+        </div><!-- /global-header -->
+	
+        <header>
+          <div class="twelve columns">
+            
+    	    <!-- =====  LOGO IMAGE WILL APPEAR HERE (MUST BE 320px X 100px)  ===== -->
+            
+    	    <img src="../images/logo.png" alt="logo image" />
+    	    <h3>Atlanta Electrical</h3>	    	
+    	    
+    	    <!-- =====  LOGO IMAGE WILL APPEAR HERE (MUST BE 320px X 100px)  ===== -->
+            
+          </div>
+        </header><!-- /header -->
+
+        <div id="island-a" class="twelve columns">
+          <h4>Services</h4>
+          <hr />
+          <% _.each(doc.service, function(val, key){ %>
+          <h5><%= val['Service Type'] %></h5>
+          <p><%= val['Description'] %>.</p>
+          <% }) %>
+        </div>
+
+        <div id="island-b" class="twelve columns">
+	  <ul class="block-grid two-up">
+	    <li><p><a href="index.html" class="nice white medium button">Home</a></p></li>
+	    <li><p><a href="about.html" class="nice white medium button">About</a></p></li>
+	  </ul>
+        </div>
+
+        <div data-role="footer" data-theme="a">
+          <h4>Powered by <a href="http://www.scanshowsell.com">ScanShowSell.com</a></h4>
+        </div><!-- /footer -->
+
+      </div><!-- /row -->
+    </div><!-- /container -->
+  </body>
+</html>

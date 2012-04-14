@@ -1,0 +1,53 @@
+<!DOCTYPE html> 
+  <%=  processTemplate('_head') %>  
+  
+  <body> 
+    <!-- Start of page: #photos -->
+    <div data-role="page" id="photos" data-theme="a">
+      <div id="navbar" data-role="header" data-theme="a">
+	<div data-role="navbar">
+	  <ul>
+	    <li><a href="#" data-icon="phone">Call</a></li>
+	    <li><a href="#" data-icon="sms">Text</a></li>
+	    <li><a href="#" data-icon="email">Email</a></li>
+	  </ul>
+	</div><!-- /navbar -->
+      </div><!-- /global-header -->
+      
+      <div class="container">
+	<header>
+    	  <div class="twelve columns">
+    	    
+	    <!-- =====  LOGO IMAGE WILL APPEAR HERE (MUST BE 320px X 100px)  ===== -->
+    	    
+    	    <h3>Atlanta Electrical</h3>
+    	    
+	    <!-- =====  LOGO IMAGE WILL APPEAR HERE (MUST BE 320px X 100px)  ===== -->
+    	    
+    	  </div>
+        </header><!-- /header -->
+	
+	<div data-role="content" data-theme="a">
+	  <ul id="gallery" class="block-grid three-up">
+	    
+	    <!-- =====  IMAGES FOR THE GALLERY GO HERE (THUMBNAIL MUST BE 95px X 95px)  ===== -->
+	    
+	    <!--       The first URL points to the full size image.         The second URL is for the thumbnail.         -->
+            <% _.each(doc['_attachments'], function(val, key){ %>
+	    <li><a href="../../../../<%= doc._id %>/<%= key %>" rel="external"><img src="../../../../<%= doc._id %>/<%= key %>" alt="<%= key %>" /></a></li>
+	    <% }) %>
+	    <!-- =====  IMAGES FOR THE GALLERY GO HERE (THUMBNAIL MUST BE 95px X 95px)  ===== -->
+	    
+	  </ul>
+	  
+	  <p><a href="index.html" data-role="button" data-ajax="false" data-icon="home" data-theme="a">Home</a></p>
+	</div>
+      </div><!-- /container -->
+
+      <div data-role="footer" data-theme="a">
+	<h4>Built with <a href="http://www.scanshowsell.com">ScanShowSell.com</a></h4>
+      </div><!-- /footer -->
+      
+    </div><!-- /about -->
+  </body>
+</html>

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<%=  processTemplate('_head') %>  
+  
+  <body> 
+    <div class="container">
+      <div class="row">
+        <!-- Start of page: #sub-survey -->
+        <div id="sub-survey">
+	  <div id="navbar" data-role="header">
+	    <div data-role="navbar">
+	      <ul>
+		<li><a href="#" data-icon="phone">Call</a></li>
+		<li><a href="#" data-icon="sms">Text</a></li>
+		<li><a href="#" data-icon="email">Email</a></li>
+	      </ul>
+	    </div>
+	  </div><!-- /navbar -->
+	  
+	  <header>
+	    <div class="twelve columns">
+	      
+	      <!-- =====  LOGO IMAGE WILL APPEAR HERE (MUST BE 320px X 100px)  ===== -->
+	      
+	      <img src="images/logo.png" alt="logo image" />
+	      <h3>Atlanta Electrical</h3>
+	      
+	      <!-- =====  LOGO IMAGE WILL APPEAR HERE (MUST BE 320px X 100px)  ===== -->
+	      
+	    </div>
+	  </header><!-- /header -->
+
+	  <div class="twelve columns" data-theme="a">
+	    <h4>Submit Survey</h4>
+	    <!-- =====  SUBMIT SURVEY FORM  ===== -->
+	    <form class="nice">
+	      <br />
+	      <p>Thank you for taking the time to fill out this survey. Your feedback is extremely valuable to us.</p>
+	      <p><em>All fields are required.</em></p>
+	      <hr />
+	      <fieldset>
+		<label for="q-1">Were you treated in a professional and friendly manner by our office personnel and service technician?</label>
+		<select name="q-1" id="q-1" data-theme="a">
+		  <option value="yes">Yes</option>
+		  <option value="no">No</option>
+		</select>
+		<br />
+		<label for="q-2">Were you quoted company policies and prices?</label>
+		<select name="q-2" id="q-2" data-role="slider" data-theme="a">
+		  <option value="no">No</option>
+		  <option value="yes">Yes</option>
+		</select>
+		<br />
+		<label for="q-3">Was our technician thorough and efficient?</label>
+		<select name="q-3" id="q-3" data-role="slider" data-theme="a">
+		  <option value="no">No</option>
+		  <option value="yes">Yes</option>
+		</select>
+		<br />
+		<label for="q-4">Did our technician clean up after themselves?</label>
+		<select name="q-4" id="q-4" data-role="slider" data-theme="a">
+		  <option value="no">No</option>
+		  <option value="yes">Yes</option>
+		</select>
+		<br />
+		<label for="q-5">Did our technician go over your bill with you before asking for payment?</label>
+		<select name="q-5" id="q-5" data-role="slider" data-theme="a">
+		  <option value="no">No</option>
+		  <option value="yes">Yes</option>
+		</select>
+		<br />
+		<label for="q-6">After collecting payment, did our technician show your where your (...) shut offs are?</label>
+		<select name="q-6" id="q-6" data-role="slider" data-theme="a">
+		  <option value="no">No</option>
+		  <option value="yes">Yes</option>
+		</select>
+		<br />
+		<label for="q-7">Would you recommend us to family, friends, etc.?</label>
+		<select name="q-7" id="q-7" data-role="slider" data-theme="a">
+		  <option value="no">No</option>
+		  <option value="yes">Yes</option>
+		</select>
+		<br />
+		<label for="q-8">Have you visited our showroom?</label>
+		<select name="q-8" id="q-8" data-role="slider" data-theme="a">
+		  <option value="no">No</option>
+		  <option value="yes">Yes</option>
+		</select>
+	      </fieldset>
+	      
+	      <fieldset>
+		<h5>Contact Information</h5>
+		<label for="name">Name</label>
+		<input type="text" name="name" id="niceFieldssetInput" class="input-text" value="" />
+		<label for="email">Email</label>
+		<input type="text" name="email" id="niceFieldssetInput" class="input-text" value="" />
+		<label for="city">City</label>
+		<input type="text" name="city" id="niceFieldssetInput" class="input-text" value="" />
+		<label for="textarea-a">Comments:</label>
+		<textarea name="textarea" id="niceFieldssetTextarea" placeholder="What would you like to say?"></textarea>
+	      </fieldset>
+	      <br />
+	      <p><em>Your email address will not be published.</em></p>
+	      <hr />
+	      <p><a href="#" data-role="button" data-icon="check" data-transition="none" data-theme="d">Submit Survey</a></p>
+	      <p><a href="index.html" data-role="button" data-icon="arrow-l" data-transition="none" data-theme="a">Cancel</a></p>
+	    </form>
+	    
+	  </div><!-- /content -->
+        </div><!-- /req-service -->
+
+      </div><!-- /row -->
+    </div><!-- /container -->
+  </body>
+</html>
