@@ -1,5 +1,7 @@
 $(document).ready(function() {
 
+    $.couch.urlPrefix = "/"
+    db = $.couch.db('common')
 	/* Use this js doc for all application specific JS */
 
 	/* TABS --------------------------------- */
@@ -36,8 +38,20 @@ $(document).ready(function() {
 	
 	
 	/* PLACEHOLDER FOR FORMS ------------- */
-	/* Remove this and jquery.placeholder.min.js if you don't need :) */
-	
+	/* Remove this and jquery.placeholder.min.js if you don't need :) */	
 	$('input, textarea').placeholder();
+
+    $(".do-send-request").click(function(e){
+        var form = $(this).parents("form").serializeForms();
+        var doc = {}
+        if(form['undefined'])
+            $.extend(doc, form['undefined'])
+
+        db.saveDoc(doc, {
+            success: function(data){
+                console.log("saved", data)
+            }
+        });
+    })
 	
 });
