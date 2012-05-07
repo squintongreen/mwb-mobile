@@ -9,14 +9,14 @@ function(doc, req) {
          interpolate : /\{\{(.+?)\}\}/g
      };
      */
-
-    template = template[doc.template || '1']
+    template = template[doc.template || 'template-1']
 
     
     processTemplate = function(fileName){
         var callback = _.template(template[fileName])
         return callback({doc: doc, req: req, template: template, processTemplate: processTemplate })
     }
-    //send(JSON.stringify(doc))
+    //send(JSON.stringify(doc));return
+
     send(processTemplate(req.query.key.replace(/\.html/g,'')))
 }
