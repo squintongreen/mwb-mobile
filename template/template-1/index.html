@@ -20,9 +20,9 @@
       <div id="navbar" data-role="header">
 	<div data-role="navbar">
 	  <ul>
-	    <li><a href="#" data-icon="phone">Call</a></li>
-	    <li><a href="#" data-icon="sms">Text</a></li>
-	    <li><a href="#" data-icon="email">Email</a></li>
+	    <li><a href="tel:<%= doc['contact-information']['telephone']"  data-icon="phone">Call</a></li>
+	    <li><a href="sms:<%= doc['contact-information']['telephone']"  data-icon="sms">Text</a></li>
+	    <li><a href="mailto:<%= doc['contact-information']['email']"  data-icon="email">Email</a></li>
 	  </ul>
 	</div>
       </div><!-- /navbar -->
