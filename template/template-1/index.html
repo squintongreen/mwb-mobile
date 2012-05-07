@@ -47,7 +47,21 @@
 	<div id="island-a" class="row">
 	  <div class="twelve columns">
 	    <p class="subtitle">Need an electrician? We're there in a flash!</p>
-	    <img src="http://placehold.it/290x150&text=OPTIONAL+IMG" alt="290x150px placeholder" />
+     	    <!-- <img src="http://placehold.it/290x150&text=OPTIONAL+IMG" alt="290x150px placeholder" /> -->
+            <% 
+               var titlePictureIndex = -1;
+               _.each(doc.fileupload, function(item, idx){
+                  if(item['title-picture'] == 'on'){
+                     titlePictureIndex = idx;
+                  };
+               });
+               if(titlePictureIndex > -1){ 
+                 var imageName = _.keys(doc._attachments)[titlePictureIndex];
+                 var titlePicture = doc.fileupload[titlePictureIndex];
+            %>
+            
+            <img src="/mwb/<%= doc._id %>/<%= imageName %>" alt="<%= titlePicture.caption %>"/>
+            <% } %>
 	    <p><a href="photos.html" data-theme="a" data-role="button">Photo Gallery</a></p>
 	    <p><a href="contact.html" data-theme="d" data-role="button">Contact</a></p>
 	    <p><a href="share.html" data-theme="d" data-role="button">Share</a></p>
