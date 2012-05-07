@@ -31,9 +31,9 @@
         <div id="island-a" class="twelve columns">
           <h4>Services</h4>
           <hr />
-          <% _.each(doc.service, function(val, key){ %>
-          <h5><%= val['Service Type'] %></h5>
-          <p><%= val['Description'] %>.</p>
+          <% _.each(doc.services, function(val, key){ %>
+          <h5><%= val['service-type'] %></h5>
+          <p><%= val['description'] %>.</p>
           <% }) %>
         </div>
 

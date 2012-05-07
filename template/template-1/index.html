@@ -71,10 +71,21 @@
 	<!-- =====  Begin: ISLAND-B  ===== -->
 	<div id="island-b" class="row">
 	  <div class="twelve columns">
+            <% if(doc['optional-pages']['request-service'] == 'on'){ %>
 	    <p><a href="req-service.html" data-theme="b" data-role="button">Request Service</a></p>
+            <% } %>
+            <% if(doc['optional-pages']['request-estimate'] == 'on'){ %>
 	    <p><a href="req-estimate.html" data-theme="b" data-role="button">Request Estimate</a></p>
+            <% } %>
+            <% if(doc['optional-pages']['request-consulation'] == 'on'){ %>
+	    <p><a href="req-consulation.html" data-theme="b" data-role="button">Request Consultation</a></p>
+            <% } %>
+            <% if(doc['optional-pages']['submit-testimonial'] == 'on'){ %>
 	    <p><a href="sub-testimonial.html" data-theme="b" data-role="button">Submit Testimonial</a></p>
+            <% } %>
+            <% if(doc['optional-pages']['submit-survey'] == 'on'){ %>
 	    <p><a href="sub-survey.html" data-theme="b" data-role="button">Submit Survey</a></p>
+            <% } %>
 	  </div>
 	</div><!-- /island-b -->
 	

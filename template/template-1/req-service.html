@@ -6,22 +6,13 @@
       <div class="row">
         <!-- Start of page: #req-service -->
         <div id="req-service">
-	  <div id="navbar" data-role="header">
-	    <div data-role="navbar">
-	      <ul>
-		<li><a href="#" data-icon="phone">Call</a></li>
-		<li><a href="#" data-icon="sms">Text</a></li>
-		<li><a href="#" data-icon="email">Email</a></li>
-	      </ul>
-	    </div>
-	  </div><!-- /navbar -->
-	  
+	  <% processTemplate('_navbar') %>
 	  <header>
 	    <div class="twelve columns">
 	      
 	      <!-- =====  LOGO IMAGE WILL APPEAR HERE (MUST BE 320px X 100px)  ===== -->
 	      
-	      <img src="images/logo.png" alt="logo image" />
+	      <img src="../images/logo.png" alt="logo image" />
 	      <h3>Atlanta Electrical</h3>
 	      
 	      <!-- =====  LOGO IMAGE WILL APPEAR HERE (MUST BE 320px X 100px)  ===== -->
@@ -35,6 +26,7 @@
 	    <!-- =====  REQUEST SERVICE FORM  ===== -->
 	    <form class="nice">
 	      <fieldset>
+                <input type="hidden" name="website" value="<%= doc._id %>"/>
 		<h5>Contact Information</h5>
 		<label for="first-name">First Name</label>
 		<input type="text" name="first-name" id="niceFieldssetInput" class="input-text" value="" />
@@ -65,7 +57,7 @@
 		</select>
 	      </fieldset>
 	      <hr />
-	      <p><a href="#" data-role="button" data-icon="check" data-transition="none" data-theme="d">Request Service</a></p>
+	      <p><a href="#" data-role="button" data-icon="check" data-transition="none" data-theme="d" class="do-send-request">Request Service</a></p>
 	      <p><a href="index.html" data-role="button" data-icon="arrow-l" data-transition="none" data-theme="a">Cancel</a></p>
 	    </form>
 	    
