@@ -37,14 +37,6 @@
         "to": "_view/*"
     },
     {
-        "from": "index.html",
-        "to": "index.html"
-    },
-    {
-        "from": "register.html",
-        "to": "register.html"
-    },
-    {
         "from": ":id/*",
         "to": "_show/_/:id",
         "query": {
