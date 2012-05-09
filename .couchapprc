@@ -1,7 +1,6 @@
 {
     "env": {
-        "default": {"db": "http://admin:secret9022@vm3:5984/mwb"},
-        "prod": {"db": "http://dee:dee@vm232.softsky.com.ua:5984/mwb"},
-        "sss": {"db": "http://admin:dee9022@scanshowsell.com:5984/mwb"}
-    }               
+        "default": {"db": "http://admin:secret9022@vm3:5984/common"},
+        "sss": {"db": "http://admin:dee9022@scanshowsell.com:5984/common"}
+    }
 }
