@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html lang="en"> <!--<![endif]-->
+  <head>
+    <link href='http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <meta charset="utf-8" />
+    
+    <!-- Set the viewport width to device width for mobile -->
+    <meta name="viewport" content="width=device-width" />
+    
+    <title>Atlanta Electric</title>
+    <%= processTemplate('_head') %>
+  </head>
+  <body>
+    <div id="home">
+      <div id="navbar" data-role="header">
+	<div data-role="navbar">
+	  <ul>
+            <% if(typeof(doc['contact-information']) != 'undefined') {%>
+	    <li><a href="tel:<%= doc['contact-information']['telephone-call'] %>"  data-icon="phone">Call</a></li>
+	    <li><a href="sms:<%= doc['contact-information']['telephone-text'] %>"  data-icon="sms">Text</a></li>
+	    <li><a href="mailto:<%= doc['contact-information']['email'] %>"  data-icon="email">Email</a></li>
+            <% } %>
+	  </ul>
+	</div>
+      </div><!-- /navbar -->
+      
+      <!-- container -->
+      <div class="container">
+	
+	<header>
+	  <div class="twelve columns">
+	    
+	    <!-- =====  LOGO IMAGE WILL APPEAR HERE (MUST BE 320px X 100px)  ===== -->
+	    
+            <% if(doc['company-profile']){%>
+	    <h3><%= doc['company-profile']['company-name'] %></h3>
+            <% } %>
+	    
+	    <!-- =====  LOGO IMAGE WILL APPEAR HERE (MUST BE 320px X 100px)  ===== -->
+	    
+	  </div>
+	</header><!-- /header -->
+	
+	<!-- =====  Begin: ISLAND-A  ===== -->
+	<div id="island-a" class="row">
+	  <div class="twelve columns">
+            <% if(doc['company-profile']){%>
+	    <p class="subtitle"><%= doc['company-profile']['slogan'] %></p>
+            <% } %>
+            
+     	    <!-- <img src="http://placehold.it/290x150&text=OPTIONAL+IMG" alt="290x150px placeholder" /> -->
+            <% 
+               var titlePictureIndex = -1;
+               _.each(doc.fileupload, function(item, idx){
+                  if(item['title-picture'] == 'on'){
+                     titlePictureIndex = idx;
+                  };
+               });
+               if(titlePictureIndex > -1){ 
+                 var imageName = _.keys(doc._attachments)[titlePictureIndex];
+                 var titlePicture = doc.fileupload[titlePictureIndex];
+            %>
+            
+            <img src="/mwb/<%= doc._id %>/<%= imageName %>" alt="<%= titlePicture.caption %>"/>
+            <% } %>
+	    <p><a href="photos.html" data-theme="a" data-role="button">Photo Gallery</a></p>
+	    <p><a href="contact.html" data-theme="d" data-role="button">Contact</a></p>
+	    <p><a href="share.html" data-theme="d" data-role="button">Share</a></p>
+	  </div>
+	</div><!-- /island-a -->
+	<hr />
+	<!-- =====  Begin: ISLAND-B  ===== -->
+	<div id="island-b" class="row">
+	  <div class="twelve columns">
+            <% if(doc['optional-pages']) { %>
+            <% if(doc['optional-pages']['request-service'] == 'on'){ %>
+	    <p><a href="req-service.html" data-theme="b" data-role="button">Request Service</a></p>
+            <% } %>
+            <% if(doc['optional-pages']['request-estimate'] == 'on'){ %>
+	    <p><a href="req-estimate.html" data-theme="b" data-role="button">Request Estimate</a></p>
+            <% } %>
+            <% if(doc['optional-pages']['request-consulation'] == 'on'){ %>
+	    <p><a href="req-consulation.html" data-theme="b" data-role="button">Request Consultation</a></p>
+            <% } %>
+            <% if(doc['optional-pages']['submit-testimonial'] == 'on'){ %>
+	    <p><a href="sub-testimonial.html" data-theme="b" data-role="button">Submit Testimonial</a></p>
+            <% } %>
+            <% if(doc['optional-pages']['submit-survey'] == 'on'){ %>
+	    <p><a href="sub-survey.html" data-theme="b" data-role="button">Submit Survey</a></p>
+            <% } %>
+            <% } %>
+	  </div>
+	</div><!-- /island-b -->
+	
+	<hr />
+	
+	<!-- =====  Begin: BUTTON-STACK  ===== -->
+	<div id="button-stack" class="row">
+	  <div class="twelve columns">
+	    <ul id="list-panel" data-role="listview" data-inset="true" data-theme="a">
+	      <li><a href="services.html" class="services">
+		  <h3>Our Services</h3>
+		  <p>What can we do for you?</p>
+	      </a></li>
+	      <li><a href="about.html" class="about">
+		  <h3>About Us</h3>
+		  <p>Get to know us.</p>
+	      </a></li>
+	      <li><a href="areas.html" class="areas">
+		  <h3>Service Areas</h3>
+		  <p>We are based in the Atlanta area.</p>
+	      </a></li>
+	      <li><a href="offers.html" class="offers">
+		  <h3>Offers</h3>
+		  <p>Check out our latest deals!</p>
+	      </a></li>
+	      <li><a href="testimonials.html" class="testimonials">
+		  <h3>Testimonials</h3>
+		  <p>See what people think of us!</p>
+	      </a></li>
+	      <li><a href="credentials.html" class="accred">
+		  <h3>Credentials</h3>
+		  <p>We are professionally licensed.</p>
+	      </a></li>
+	    </ul>
+	  </div>
+	</div><!-- /button-stack -->
+	
+      </div>
+      <!-- container -->
+      
+      <div data-role="footer" data-theme="a">
+	<h4>Powered by <a href="http://www.scanshowsell.com">ScanShowSell.com</a></h4>
+      </div>
+    </div><!-- /home -->    
+  </body>
+</html>
