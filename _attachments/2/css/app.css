@@ -1,0 +1,103 @@
+/* Artfully masterminded by ZURB  */
+
+/* -------------------------------------------------- 
+   Table of Contents
+-----------------------------------------------------
+:: Shared Styles
+:: Page Name 1
+:: Page Name 2
+*/
+
+
+/* -----------------------------------------
+   Shared Styles
+----------------------------------------- */
+
+/*  Header  */
+	header 						{text-align:center;}
+	.site-name					{margin-top:9px;}
+	.tagline					{margin:9px auto;padding:18px 0 9px 0;border-top:1px solid #e1e1e1;font-style:italic;color:#696969;}
+
+/*  Content Islands  */
+	#island-a 					{
+								border-top:5px solid #050917;
+								background: #fcfcfc; /* Old browsers */
+								background: -moz-linear-gradient(top, #fcfcfc 0%, #f1f1f1 100%); /* FF3.6+ */
+								background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#fcfcfc), color-stop(100%,#f1f1f1)); /* Chrome,Safari4+ */
+								background: -webkit-linear-gradient(top, #fcfcfc 0%,#f1f1f1 100%); /* Chrome10+,Safari5.1+ */
+								background: -o-linear-gradient(top, #fcfcfc 0%,#f1f1f1 100%); /* Opera 11.10+ */
+								background: -ms-linear-gradient(top, #fcfcfc 0%,#f1f1f1 100%); /* IE10+ */
+								background: linear-gradient(top, #fcfcfc 0%,#f1f1f1 100%); /* W3C */
+								filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fcfcfc', endColorstr='#f1f1f1',GradientType=0 ); /* IE6-9 */
+								}
+	#island-b 					{background:url('../images/wood.jpg') left top repeat, #ececec;box-shadow:inset 0px 7px 3px -6px rgba(0, 0, 0, 0.25);}
+	#island-b > div 			{
+								margin-top:54px;
+								padding-bottom:18px;
+								background: #fcfcfc; /* Old browsers */
+								background: -moz-linear-gradient(top, #fcfcfc 0%, #f9f9f9 100%); /* FF3.6+ */
+								background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#fcfcfc), color-stop(100%,#f9f9f9)); /* Chrome,Safari4+ */
+								background: -webkit-linear-gradient(top, #fcfcfc 0%,#f9f9f9 100%); /* Chrome10+,Safari5.1+ */
+								background: -o-linear-gradient(top, #fcfcfc 0%,#f9f9f9 100%); /* Opera 11.10+ */
+								background: -ms-linear-gradient(top, #fcfcfc 0%,#f9f9f9 100%); /* IE10+ */
+								background: linear-gradient(top, #fcfcfc 0%,#f9f9f9 100%); /* W3C */
+								filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fcfcfc', endColorstr='#f9f9f9',GradientType=0 ); /* IE6-9 */
+								box-shadow: 0 -1px 3px rgba(0,0,0,0.25);
+								}
+	#island-b > div > ul 		{margin-bottom:0;}
+	#list-panel         		{margin:0;padding:0;list-style:none;}
+    #list-panel li        		{margin:0;padding-top:10px;border-bottom:1px solid #d3d3d3;}
+    #list-panel li:last-child 	{border:none;}
+
+    #btn-group-wrap 			{
+								margin:0;
+								padding:36px 0;
+								background: url('../images/light-wood.jpg') left top repeat, #ececec;
+								box-shadow:inset 0px 7px 3px -6px rgba(0, 0, 0, 0.25);
+								}
+	.btn-wrap 					{border-radius:2px;border:1px solid rgba(0,0,0,0.5);box-shadow:0 0 0 5px rgba(0,0,0,0.25);float:left;}
+	.btn-wrap a					{padding:18px 0;font-size:1.13em !important;}
+	.btn-wrap a:first-child 	{border-radius:2px 2px 0 0;}
+	.btn-wrap a:last-child		{margin-bottom:0;border-radius:0 0 2px 2px;}
+
+/*  Footer  */
+	footer						{
+								padding-top:18px;
+								background:url('../images/wood.jpg') left top repeat, #ececec;
+								box-shadow:inset 0px 7px 3px -6px rgba(0, 0, 0, 0.25);
+								}
+	footer a 					{margin:18px 20px;}
+	#island-f 					{
+								padding-top:18px;
+								background: #fcfcfc; /* Old browsers */
+								background: -moz-linear-gradient(top, #fcfcfc 0%, #f1f1f1 100%); /* FF3.6+ */
+								background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#fcfcfc), color-stop(100%,#f1f1f1)); /* Chrome,Safari4+ */
+								background: -webkit-linear-gradient(top, #fcfcfc 0%,#f1f1f1 100%); /* Chrome10+,Safari5.1+ */
+								background: -o-linear-gradient(top, #fcfcfc 0%,#f1f1f1 100%); /* Opera 11.10+ */
+								background: -ms-linear-gradient(top, #fcfcfc 0%,#f1f1f1 100%); /* IE10+ */
+								background: linear-gradient(top, #fcfcfc 0%,#f1f1f1 100%); /* W3C */
+								filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fcfcfc', endColorstr='#f1f1f1',GradientType=0 ); /* IE6-9 */
+								box-shadow:0px -1px 3px rgba(0, 0, 0, 0.25);
+								text-align:center;
+								}
+
+/*  Type Styles  */
+	#island-b div > img 		{margin:-10px 0 10px 0;float:left;}
+	#island-b div > img + h4	{margin:10px 0 0 75px;padding-top:10px;display:block;}
+	.name 						{font-weight:600;}
+
+
+/* -----------------------------------------
+   Page Name 1
+----------------------------------------- */
+
+	#contact > a 				{padding:11px 26px 13px !important;display:inline;float:left !important;}
+
+
+
+
+/* -----------------------------------------
+   Page Name 2
+----------------------------------------- */
+
+
