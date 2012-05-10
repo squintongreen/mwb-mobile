@@ -1,18 +1,5 @@
 $(function () {
 
-    $("#login_form").couchLogin({
-        loggedIn: function(user){
-            $("#topbar-user-toggle").text("Login")
-                .on("click", function(){
-                    
-                });
-
-        },
-        loggedOut: function(data){
-            $("#topbar-user-toggle").text("<NONE>")
-        }
-    })
-
     $("a[href$=#]").attr("href", "")
 
     $(".topbar-logout").click(function(){
