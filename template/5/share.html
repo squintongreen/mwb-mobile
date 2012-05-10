@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+
+<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html lang="en"> <!--<![endif]-->
+<head>
+	<link href='http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+	<meta charset="utf-8" />
+	
+	<!-- Set the viewport width to device width for mobile -->
+	<meta name="viewport" content="width=device-width" />
+	
+	<title>Atlanta Electric</title>
+  
+	<!-- Included CSS Files -->
+	<!-- Combine and Compress These CSS Files -->
+	<link rel="stylesheet" href="css/template_contact.css">
+	<link rel="stylesheet" href="css/globals.css">
+	<link rel="stylesheet" href="css/typography.css">
+	<link rel="stylesheet" href="css/grid.css">
+	<link rel="stylesheet" href="css/ui.css">
+	<link rel="stylesheet" href="css/forms.css">
+	<link rel="stylesheet" href="css/mobile.css">
+	<!-- End Combine and Compress These CSS Files -->
+	<link rel="stylesheet" href="css/app.css">
+	
+	<link rel="stylesheet" href="css/jquery.mobile-1.0.1.css" />
+	<link rel="stylesheet" href="css/themes/simple.css" />
+	<script src="js/jquery.js"></script>
+	<!--
+	<script type="text/javascript">
+		$(document).bind("mobileinit", function(){
+  			$.mobile.defaultPageTransition = 'none';
+		});
+	</script> -->
+	
+	<script src="js/jquery.mobile-1.0.1.min.js"></script>
+
+	<!--[if lt IE 9]>
+		<link rel="stylesheet" href="css/ie.css">
+	<![endif]-->
+
+	
+	<!-- IE Fix for HTML5 Tags -->
+	<!--[if lt IE 9]>
+		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+	
+	<style type="text/css">
+	.ui-icon-phone 				{
+								background-color:none !important;
+								background-image: url("images/icn-phone.png");
+								background-position-x:2px;
+								background-position-y:1px;
+								}
+	.ui-icon-sms 				{
+								background-color:none !important;
+								background-image: url("images/icn-sms.png");
+								background-position-x:1px;
+								background-position-y:1px;
+								}
+	.ui-icon-email 				{
+								background-color:none !important;
+								background-image: url("images/icn-email.png");
+								background-position-x:3px;
+								background-position-y:2px;
+								}
+	#button-stack				{margin-top:18px;margin-bottom:18px;}
+	</style>
+</head>
+	
+<body> 
+<div class="container">
+<div class="row">
+<!-- Start of page: #share -->
+<div data-role="page" id="share" data-theme="a">
+<div class="container">
+		
+	<div data-role="content" data-theme="a">
+		<center><h4>Share this site.</h4></center>
+		<center><h5>Scan with your phone!</h5></center>
+		<center><img src="images/qr.jpg" alt="290px QR code" /></center>
+		
+		<hr />
+		
+		<p><a href="#" data-role="button" data-icon="star" data-theme="c">Twitter</a></p>
+		<p><a href="#" data-role="button" data-icon="star" data-theme="c">Facebook</a></p>
+		<p><a href="#" data-role="button" data-icon="star" data-theme="c">Email</a></p>
+		
+		<p><a href="index.html" data-role="button" data-ajax="false" data-icon="home" data-theme="a">Home</a></p>
+	</div><!-- content -->
+
+</div><!-- /container -->
+</div><!-- /share -->
+
+</div><!-- /row -->
+</div><!-- /container -->
+</body>
+</html>

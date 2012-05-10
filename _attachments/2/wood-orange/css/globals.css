@@ -1,0 +1,190 @@
+/* Arfully Masterminded by ZURB */
+
+/* -------------------------------------------------- 
+    Table of Contents
+-----------------------------------------------------
+:: Reset & Standards
+:: Block Styles
+:: Links
+:: Lists
+:: Tables
+:: Misc
+*/
+
+
+/*	--------------------------------------------------
+	:: Global Reset & Standards
+	-------------------------------------------------- */
+	
+	/* 
+		Eric Meyer's CSS Reset
+		http://meyerweb.com/eric/tools/css/reset/ 
+		v2.0 | 20110126
+   		License: none (public domain)
+	*/
+	
+	html, body, div, span, applet, object, iframe,
+	h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+	a, abbr, acronym, address, big, cite, code,
+	del, dfn, em, img, ins, kbd, q, s, samp,
+	small, strike, strong, sub, sup, tt, var,
+	b, u, i, center,
+	dl, dt, dd, ol, ul, li,
+	fieldset, form, label, legend,
+	table, caption, tbody, tfoot, thead, tr, th, td,
+	article, aside, canvas, details, embed, 
+	figure, figcaption, footer, header, hgroup, 
+	menu, nav, output, ruby, section, summary,
+	time, mark, audio, video {
+		margin: 0;
+		padding: 0;
+		border: 0;
+		font: inherit;
+		vertical-align: baseline;
+	}
+	html {
+		font-size: 62.5%; 
+	}
+	/* HTML5 display-role reset for older browsers */
+	article, aside, details, figcaption, figure, 
+	footer, header, hgroup, menu, nav, section {
+		display: block;
+	}
+	body {
+		line-height: 1;
+	}
+	ol, ul {
+		list-style: none;
+	}
+	blockquote, q {
+		quotes: none;
+	}
+	blockquote:before, blockquote:after,
+	q:before, q:after {
+		content: '';
+		content: none;
+	}
+	table {
+		border-collapse: collapse;
+		border-spacing: 0;
+	}
+	
+	
+	
+	body { background: #fff; font-family: "Helvetica Neue", "HelveticaNeue", Helvetica, Arial, "Lucida Grande", sans-serif; font-size: 13px; line-height: 18px; color: #555; position: relative; -webkit-font-smoothing: antialiased; -webkit-backface-visibility: hidden;}
+
+/*	--------------------------------------------------
+	:: Shared Block Styles
+	-------------------------------------------------- */
+
+	#browser-alert				{margin-top:15%;padding: 72px 20px;background:#494949;border:10px solid #414141;color:#f3f3f3;height:150px;}
+	#browser-alert div h2,
+	#browser-alert div h4 		{color:#f3f3f3 !important;}
+
+	/*  Header  */
+	header 						{text-align:center;}
+	.site-name					{margin-top:9px;}
+	.tagline					{margin:9px auto;padding:18px 0 9px 0;border-top:1px solid #e1e1e1;font-style:italic;color:#696969;}
+	#toolbar				 	{margin:18px 0 0 8% !important;}
+
+	#btn-group-wrap 			{
+								margin:0;
+								padding:36px 0;
+								background: url('../images/light-wood.jpg') left top repeat, #ececec;
+								box-shadow:inset 0px 7px 3px -6px rgba(0, 0, 0, 0.25);
+								}
+	.btn-wrap 					{border-radius:2px;border:1px solid rgba(0,0,0,0.5);box-shadow:0 0 0 5px rgba(0,0,0,0.25);float:left;}
+	.btn-wrap a					{padding:18px 0;font-size:1.13em !important;}
+	.btn-wrap a:first-child 	{border-radius:2px 2px 0 0;}
+	.btn-wrap a:last-child		{margin-bottom:0;border-radius:0 0 2px 2px;}
+
+	#list-group					{
+								margin:0;
+								padding:0;
+								background: #fcfcfc; /* Old browsers */
+								background: -moz-linear-gradient(top, #fcfcfc 0%, #f9f9f9 100%); /* FF3.6+ */
+								background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#fcfcfc), color-stop(100%,#f9f9f9)); /* Chrome,Safari4+ */
+								background: -webkit-linear-gradient(top, #fcfcfc 0%,#f9f9f9 100%); /* Chrome10+,Safari5.1+ */
+								background: -o-linear-gradient(top, #fcfcfc 0%,#f9f9f9 100%); /* Opera 11.10+ */
+								background: -ms-linear-gradient(top, #fcfcfc 0%,#f9f9f9 100%); /* IE10+ */
+								background: linear-gradient(top, #fcfcfc 0%,#f9f9f9 100%); /* W3C */
+								filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fcfcfc', endColorstr='#f9f9f9',GradientType=0 ); /* IE6-9 */
+								box-shadow: 0 -1px 3px rgba(0,0,0,0.25);
+								}
+    #list-panel         		{margin:0;padding:0;list-style:none;}
+    #list-panel li        		{margin:0;padding-top:10px;border-bottom:1px solid #d3d3d3;}
+    #list-panel li:last-child 	{border:none;}
+
+    footer						{
+								margin:0;
+								padding-top:18px;
+								background: url('../images/wood.jpg') left top repeat, #ececec;
+								box-shadow:inset 0px 7px 3px -6px rgba(0, 0, 0, 0.25);
+								}
+	footer a 					{margin:0 20px 18px 20px;}
+	#island-f 					{
+								margin:0;
+								padding-top:18px;
+								background: #fcfcfc; /* Old browsers */
+								background: -moz-linear-gradient(top, #fcfcfc 0%, #f1f1f1 100%); /* FF3.6+ */
+								background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#fcfcfc), color-stop(100%,#f1f1f1)); /* Chrome,Safari4+ */
+								background: -webkit-linear-gradient(top, #fcfcfc 0%,#f1f1f1 100%); /* Chrome10+,Safari5.1+ */
+								background: -o-linear-gradient(top, #fcfcfc 0%,#f1f1f1 100%); /* Opera 11.10+ */
+								background: -ms-linear-gradient(top, #fcfcfc 0%,#f1f1f1 100%); /* IE10+ */
+								background: linear-gradient(top, #fcfcfc 0%,#f1f1f1 100%); /* W3C */
+								filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fcfcfc', endColorstr='#f1f1f1',GradientType=0 ); /* IE6-9 */
+								box-shadow:0px -1px 3px rgba(0, 0, 0, 0.25);
+								text-align:center;
+								}
+
+/*	--------------------------------------------------
+	:: Links
+	-------------------------------------------------- */
+	a { color: #2a85e8; text-decoration: none; outline: 0; line-height: inherit; }
+	a:hover { color: #11639d; }
+	p a, p a:visited { line-height: inherit; }
+	
+
+/*	--------------------------------------------------
+	:: Lists
+	-------------------------------------------------- */
+	ul, ol { margin-bottom: 18px; }
+	ul { list-style: none outside; }
+	ol { list-style: decimal; }
+	ol, ul.square, ul.circle, ul.disc { margin-left: 30px; }
+	ul.square { list-style: square outside; }
+	ul.circle { list-style: circle outside; }
+	ul.disc { list-style: disc outside; }
+	ul ul, ol ol { margin: 4px 0 5px 30px; }
+	li { margin-bottom: 12px; }
+	ul.large li { line-height: 21px; }
+	
+
+/*	--------------------------------------------------
+	:: Tables
+	-------------------------------------------------- */
+	table { background: #fff; -moz-border-radius: 3px; -webkit-border-radius: 3px; width: 100%; margin: 0 0 18px; border: 1px solid #ddd;  }
+	
+	table thead { background: #f5f5f5; }
+	table thead tr th,
+	table tbody tr td { font-size: 12px; line-height: 18px; text-align: left; }
+	table thead tr th { padding: 8px 10px 9px; font-size: 14px; font-weight: bold; color: #222; }
+	table thead tr th:first-child { border-left: none; }
+	table thead tr th:last-child { border-right: none; }
+	
+	table thead tr {  }
+	table tbody {  }
+	table tbody tr {  }
+	table tbody tr.even,
+	table tbody tr.alt { background: #f9f9f9; }
+	table tbody tr:nth-child(even) { background: #f9f9f9; }
+	table tbody tr td { color: #333; padding: 9px 10px; vertical-align: top; border: none; }
+
+/* -------------------------------------------------- 
+	:: Misc
+---------------------------------------------------*/
+	.left       { float: left; }
+	.right      { float: right; }
+	.hide     	{ display: none; }
+	.highlight 	{ background: #ff0; }
+	
