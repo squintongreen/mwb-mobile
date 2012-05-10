@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+
+<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html lang="en"> <!--<![endif]-->
+<head>
+	<link href='http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+	<meta charset="utf-8" />
+	
+	<!-- Set the viewport width to device width for mobile -->
+	<meta name="viewport" content="width=device-width" />
+	
+	<title>Atlanta Electric</title>
+  
+	<!-- Included CSS Files -->
+	<!-- Combine and Compress These CSS Files -->
+	<link rel="stylesheet" href="css/template_contact.css">
+	<link rel="stylesheet" href="css/typography.css">
+	<link rel="stylesheet" href="css/grid.css">
+	<link rel="stylesheet" href="css/ui.css">
+	<link rel="stylesheet" href="css/forms.css">
+	<link rel="stylesheet" href="css/mobile.css">
+	<!-- End Combine and Compress These CSS Files -->
+	<link rel="stylesheet" href="css/app.css">
+	
+	<link rel="stylesheet" href="css/jquery.mobile-1.0.1.css" />
+	<link rel="stylesheet" href="css/themes/simple.css" />
+	<script src="js/jquery.js"></script>
+	<script type="text/javascript">
+		$(document).bind('mobileinit',function(){
+			$.extend( $.mobile , {
+			  ajaxEnabled: false,
+			  defaultPageTransition: 'none'
+			});
+		});
+	</script>
+	
+	<script src="js/jquery.mobile-1.0.1.min.js"></script>
+
+	<!--[if lt IE 9]>
+		<link rel="stylesheet" href="css/ie.css">
+	<![endif]-->
+
+	
+	<!-- IE Fix for HTML5 Tags -->
+	<!--[if lt IE 9]>
+		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+	
+	<style type="text/css">
+	.ui-icon-phone 				{
+								background-color:none !important;
+								background-image: url("images/icn-phone.png");
+								background-position-x:2px;
+								background-position-y:1px;
+								}
+	.ui-icon-sms 				{
+								background-color:none !important;
+								background-image: url("images/icn-sms.png");
+								background-position-x:1px;
+								background-position-y:1px;
+								}
+	.ui-icon-email 				{
+								background-color:none !important;
+								background-image: url("images/icn-email.png");
+								background-position-x:3px;
+								background-position-y:2px;
+								}
+	#button-stack				{margin-top:18px;margin-bottom:18px;}
+	</style>
+</head>
+	
+<body> 
+<div class="container">
+<div class="row">
+<!-- Start of page: #req-estimate -->
+<div id="req-estimate">
+	<div id="navbar" data-role="header">
+		<div data-role="navbar">
+		<ul>
+			<li><a href="#" data-icon="phone">Call</a></li>
+			<li><a href="#" data-icon="sms">Text</a></li>
+			<li><a href="#" data-icon="email">Email</a></li>
+		</ul>
+		</div>
+	</div><!-- /navbar -->
+	
+	<header>
+		<div class="twelve columns">
+		
+		<!-- =====  LOGO IMAGE WILL APPEAR HERE (MUST BE 320px X 100px)  ===== -->
+			
+			<img src="images/logo.png" alt="logo image" />
+		    <h3>Atlanta Electrical</h3>
+		    
+		<!-- =====  LOGO IMAGE WILL APPEAR HERE (MUST BE 320px X 100px)  ===== -->
+		
+		</div>
+	</header><!-- /header -->
+
+	
+	<div class="twelve columns" data-theme="a">
+		<h4>Request Consultation</h4>
+		<!-- =====  REQUEST ESTIMATE FORM  ===== -->
+		<form class="nice">
+			<fieldset>
+		    <h5>Contact Information</h5>
+		    	<label for="first-name">Full Name</label>
+		    	<input type="text" name="first-name" id="niceFieldssetInput" class="input-text" value="" />
+		    	<label for="tel">Phone</label>
+		    	<input type="text" name="tel-primary" id="niceFieldssetInput" class="input-text" value="" />
+		    	<label for="email">Email</label>
+		    	<input type="text" name="email" id="niceFieldssetInput" class="input-text" value="" />
+		    <!--
+		    <h5>Your Location</h5>
+		    	<label for="address">Street Address</label>
+		    	<input type="text" name="address" id="niceFieldssetInput" class="input-text" value="" />
+		    	<label for="city">City</label>
+		    	<input type="text" name="city" id="niceFieldssetInput" class="input-text" value="" />
+		    	<label for="zip">Zip</label>
+		    	<input type="text" name="zip" id="niceFieldssetInput" class="input-text" value="" />
+		    -->
+			<h5>Describe Work</h5>
+		    	<label for="textarea-a">Reason for Consultation:</label>
+		    	<textarea name="textarea" id="niceFieldssetTextarea" placeholder="Please describe your request."></textarea>
+		    	<label for="contact-method" class="select">Preferred Contact Method:</label>
+				<select name="contact-method" id="contact-method" data-theme="a">
+				   <option value="primary-phone" data-content-theme="d">Phone</option>
+				   <option value="email" data-content-theme="d">Email</option>
+				</select>
+				<label for="contact-method" class="select">Preferred Contact Time:</label>
+				<select name="contact-method" id="contact-method" data-theme="a">
+				   <option value="primary-phone" data-content-theme="d">Phone</option>
+				   <option value="email" data-content-theme="d">Email</option>
+				</select>
+		    </fieldset>
+		    <hr />
+		    <p><a href="#" data-role="button" data-icon="check" data-transition="none" data-theme="d">Request Estimate</a></p>
+		    <p><a href="index.html" data-role="button" data-icon="arrow-l" data-transition="none" data-theme="a">Cancel</a></p>
+		</form>
+		
+	</div><!-- /content -->
+</div><!-- /req-service -->
+
+</div><!-- /row -->
+</div><!-- /container -->
+</body>
+</html>
