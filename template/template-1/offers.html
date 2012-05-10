@@ -1,11 +1,9 @@
-<!DOCTYPE html>
-
 <html lang="en">
-  <%=  processTemplate('_head') %>
+  <%=  processTemplate('_head') %>  
   <body> 
     <div class="container">
-      <div id="testimonials" class="row">
-        <!-- Start of page: #testimonials -->
+      <div id="offers" class="row">
+        <!-- Start of page: #offers -->
         <div id="navbar" data-role="header" data-theme="a">
 	  <div data-role="navbar">
 	    <ul>
@@ -30,16 +28,20 @@
         </header><!-- /header -->
 	
         <div id="island-a" class="twelve columns">
-	  <h5>Testimonials</h5>
-            <% _.each(doc['Testimonials'], function(val, key){ %>
-               <p class="name"><%= val.name %> - <i><%= val.description %></i></p>
+	  <h4>Special Offers</h4>
+            <% _.each(doc['special-offers'], function(val, key){ %>
+	    <h5>Special <%= key %></h5>
+               <p class="name"> Special offer name: <i><%= val['name'] %></i></p>
+               <p class="name"> Discount amount: <i><%= val['discount-amount'] %></i></p>
+               <p class="name"> Discount type: <i><%= val['discount-type'] %></i></p>
+               <p class="name"> Description: <i><%= val['description'] %></i></p>
           <% }) %>
         </div>
 	
         <div id="island-b" class="twelve columns">
 	  <ul class="block-grid two-up">
-	    <li><p><a href="offers.html" class="nice white medium button">Specials</a></p></li>
-	    <li><p><a href="accred.html" class="nice white medium button">Accreditations</a></p></li>
+	    <li><p><a href="areas.html" class="nice white medium button">Areas</a></p></li>
+	    <li><p><a href="testimonials.html" class="nice white medium button">Testimonials</a></p></li>
 	  </ul>
         </div>
 	

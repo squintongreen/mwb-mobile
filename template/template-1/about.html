@@ -34,14 +34,14 @@
           <h4>Company Profile</h4>
           <hr />
           <% _.each(doc['company-profile'], function(val, key){ %>
-          <h5><%= key %></h5>
-          <p><%= val %>.</p>
+          <h5><%= key.replace(/-/gi, ' ') %></h5>
+          <p><%= val %></p>
           <% }) %>
 
           <h4>Contact information</h4>
           <% _.each(doc['contact-information'], function(val, key){ %>
-          <h5><%= key %></h5>
-          <p><%= val %>.</p>
+          <h5><%= key.replace(/-/gi, ' ') %></h5>
+          <p><%= val %></p>
           <% }) %>
         </div>
 	

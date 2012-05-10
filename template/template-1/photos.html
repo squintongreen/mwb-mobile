@@ -34,7 +34,7 @@
 	    
 	    <!--       The first URL points to the full size image.         The second URL is for the thumbnail.         -->
             <% _.each(doc['_attachments'], function(val, key){ %>
-	    <li><a href="../../../../<%= doc._id %>/<%= key %>" rel="external"><img src="../../../../<%= doc._id %>/<%= key %>" alt="<%= key %>" /></a></li>
+	    <li><a href="../../../mwb/<%= doc._id %>/<%= key %>" rel="external"><img src="../../../mwb/<%= doc._id %>/<%= key %>" alt="<%= key %>" /></a></li>
 	    <% }) %>
 	    <!-- =====  IMAGES FOR THE GALLERY GO HERE (THUMBNAIL MUST BE 95px X 95px)  ===== -->
 	    

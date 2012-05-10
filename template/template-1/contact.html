@@ -14,11 +14,22 @@
         <div data-role="page" id="contact" data-theme="a">
 	  
 	  <div data-role="content" data-theme="a">
-	    <center><h5>Flash Gordon Electric</h5>
-	      <p class="address">34 Peachtree Street&nbsp;&nbsp;-&nbsp;&nbsp;Atlanta, GA</p></center>
-	    <p><a href="#" data-role="button" data-icon="phone" data-theme="a">Call</a></p>
-	    <p><a href="#" data-role="button" data-icon="sms" data-theme="a">Text</a></p>
-	    <p><a href="#" data-role="button" data-icon="email" data-theme="a">Email</a></p>
+            <% if(doc['company-profile']){%>
+	    <center>
+              <h5><%= doc['company-profile']['company-name'] %></h5>
+	       <p class="address">
+                 <%= doc['company-profile']['street-address'] %>,
+	         <%= doc['company-profile']['suite'] %>,
+	         <%= doc['company-profile']['city'] %>,
+	         <%= doc['company-profile']['state'] %>
+               </p>
+            </center>
+            <% } %>
+            <% if(doc['company-profile']){%>
+	    <p><a href="tel:<%= doc['company-profile']['telephone-call'] %>" data-role="button" data-icon="phone" data-theme="a">Call</a></p>
+	    <p><a href="sms:<%= doc['company-profile']['telephone-text'] %>" data-role="button" data-icon="sms" data-theme="a">Text</a></p>
+	    <p><a href="mailto:<%= doc['company-profile']['email'] %>" data-role="button" data-icon="email" data-theme="a">Email</a></p>
+            <% } %>
 	    
 	    <!-- =====  CONTACT FORM  =====
 		 <form>
