@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<%=  processTemplate('_head') %>  
+  
+  <body> 
+    <div class="container">
+      <div class="row">
+        <!-- Start of page: #req-service -->
+        <div id="req-service">
+	  <% processTemplate('_navbar') %>
+	  <header>
+	    <div class="twelve columns">
+	      
+	      <!-- =====  LOGO IMAGE WILL APPEAR HERE (MUST BE 320px X 100px)  ===== -->
+	      
+	      <img src="../images/logo.png" alt="logo image" />
+	      <h3>Atlanta Electrical</h3>
+	      
+	      <!-- =====  LOGO IMAGE WILL APPEAR HERE (MUST BE 320px X 100px)  ===== -->
+	      
+	    </div>
+	  </header><!-- /header -->
+
+	  <div class="twelve columns" data-theme="a">
+	    
+	    <h4>Request Service</h4>
+	    <!-- =====  REQUEST SERVICE FORM  ===== -->
+	    <form class="nice">
+	      <fieldset>
+                <input type="hidden" name="website" value="<%= doc._id %>"/>
+		<h5>Contact Information</h5>
+		<label for="first-name">First Name</label>
+		<input type="text" name="first-name" id="niceFieldssetInput" class="input-text" value="" />
+		<label for="last-name">Last Name</label>
+		<input type="text" name="last-name" id="niceFieldssetInput" class="input-text" value=""/>
+		<label for="tel-primary">Primary Phone</label>
+		<input type="text" name="tel-primary" id="niceFieldssetInput" class="input-text" value="" />
+		<label for="tel-work">Work Phone</label>
+		<input type="text" name="tel-work" id="niceFieldssetInput" class="input-text" value="" />
+		<label for="email">Email</label>
+		<input type="text" name="email" id="niceFieldssetInput" class="input-text" value="" />
+		<h5>Your Location</h5>
+		<label for="address">Street Address</label>
+		<input type="text" name="address" id="niceFieldssetInput" class="input-text" value="" />
+		<label for="city">City</label>
+		<input type="text" name="city" id="niceFieldssetInput" class="input-text" value="" />
+		<label for="zip">Zip</label>
+		<input type="text" name="zip" id="niceFieldssetInput" class="input-text" value="" />
+		<h5>Service Request</h5>
+		<label for="textarea-a">Describe problem:</label>
+		<textarea name="textarea" id="niceFieldssetTextarea" placeholder="Please describe your problem."></textarea>
+		<br />
+		<label for="contact-method" class="select">Preferred Contact Method:</label>
+		<select name="contact-method" id="contact-method" data-theme="a">
+		  <option value="primary-phone" data-content-theme="d">Primary Phone</option>
+		  <option value="work-phone" data-content-theme="d">Work Phone</option>
+		  <option value="email" data-content-theme="d">Email</option>
+		</select>
+	      </fieldset>
+	      <hr />
+	      <p><a href="#" data-role="button" data-icon="check" data-transition="none" data-theme="d" class="do-send-request">Request Service</a></p>
+	      <p><a href="index.html" data-role="button" data-icon="arrow-l" data-transition="none" data-theme="a">Cancel</a></p>
+	    </form>
+	    
+	  </div><!-- /content -->
+        </div><!-- /req-service -->
+
+      </div><!-- /row -->
+    </div><!-- /container -->
+  </body>
+</html>

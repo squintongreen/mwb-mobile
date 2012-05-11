@@ -1,0 +1,59 @@
+/*	--------------------------------------------------
+	:: Type Styles
+	-------------------------------------------------- */
+
+
+/*	--------------------------------------------------
+	:: Block Styles
+	-------------------------------------------------- */
+	
+	#hero-wrap 					{margin-bottom:18px;}
+	#island-a 					{
+								margin:0;
+								padding:0;
+								border-top:5px solid #050917;
+								background: #fcfcfc; /* Old browsers */
+								background: -moz-linear-gradient(top, #fcfcfc 0%, #f1f1f1 100%); /* FF3.6+ */
+								background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#fcfcfc), color-stop(100%,#f1f1f1)); /* Chrome,Safari4+ */
+								background: -webkit-linear-gradient(top, #fcfcfc 0%,#f1f1f1 100%); /* Chrome10+,Safari5.1+ */
+								background: -o-linear-gradient(top, #fcfcfc 0%,#f1f1f1 100%); /* Opera 11.10+ */
+								background: -ms-linear-gradient(top, #fcfcfc 0%,#f1f1f1 100%); /* IE10+ */
+								background: linear-gradient(top, #fcfcfc 0%,#f1f1f1 100%); /* W3C */
+								filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fcfcfc', endColorstr='#f1f1f1',GradientType=0 ); /* IE6-9 */
+								}
+    #list-panel li a      		{
+				                 margin:0;
+				                 padding:10px 0 10px 80px;
+				                 background-image:url('../images/list-sprite.png');
+				                 background-repeat:no-repeat;
+				                 color:#292929;
+				                 text-decoration:none;
+				                 line-height:.875em;
+				                 display:block;
+				                 }
+    #list-panel li a.services 	 {
+				                 background-position-x:8px;
+				                 background-position-y:-624px;
+				                 }
+    #list-panel li a.about    	 {
+				                 background-position-x:8px;
+				                 background-position-y:5px;
+				                 }
+    #list-panel li a.areas    	 {
+				                 background-position-x:7px;
+				                 background-position-y:-120px;
+				                 }
+    #list-panel li a.offers   	 {
+				                 background-position-x:7px;
+				                 background-position-y:-249px;
+				                 }
+    #list-panel li a.testimonials   {
+				                 background-position-x:7px;
+				                 background-position-y:-373px;
+				                 }
+    #list-panel li a.credentials {
+				                 background-position-x:8px;
+				                 background-position-y:-499px;
+				                 }
+    #list-panel li a h3     	{line-height:.875em;}
+    #list-panel li a p      	{color:#393939;font-weight:500;}

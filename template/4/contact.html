@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+
+<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html lang="en"> <!--<![endif]-->
+  <%= processTemplate('_head') %>
+  
+  <body> 
+    <div class="container">
+      <div class="row">
+        <!-- Start of page: #contact -->
+        <div data-role="page" id="contact" data-theme="a">
+	  
+	  <div data-role="content" data-theme="a">
+            <% if(doc['company-profile']){%>
+	    <center>
+              <h5><%= doc['company-profile']['company-name'] %></h5>
+	       <p class="address">
+                 <%= doc['company-profile']['street-address'] %>,
+	         <%= doc['company-profile']['suite'] %>,
+	         <%= doc['company-profile']['city'] %>,
+	         <%= doc['company-profile']['state'] %>
+               </p>
+            </center>
+            <% } %>
+            <% if(doc['company-profile']){%>
+	    <p><a href="tel:<%= doc['company-profile']['telephone-call'] %>" data-role="button" data-icon="phone" data-theme="a">Call</a></p>
+	    <p><a href="sms:<%= doc['company-profile']['telephone-text'] %>" data-role="button" data-icon="sms" data-theme="a">Text</a></p>
+	    <p><a href="mailto:<%= doc['company-profile']['email'] %>" data-role="button" data-icon="email" data-theme="a">Email</a></p>
+            <% } %>
+	    
+	    <!-- =====  CONTACT FORM  =====
+		 <form>
+		   <div data-role="fieldcontain" class="ui-hide-label">
+		     <label for="full-name" class="ui-hidden-accessible">Full Name</label>
+		     <input type="text" name="full-name" id="full-name" value="" placeholder="Full Name" />
+		     <br />
+		     <label for="tel" class="ui-hidden-accessible">Telephone</label>
+		     <input type="text" name="tel" id="tel" value="" placeholder="Telephone" />
+		     <br />
+		     <label for="email" class="ui-hidden-accessible">Email</label>
+		     <input type="text" name="email" id="email" value="" placeholder="Email" />
+		     <br />
+		     <label for="textarea-a" class="ui-hidden-accessible">Optional Comments:</label>
+		     <textarea name="textarea" id="textarea-a" placeholder="Comments:"></textarea>
+		   </div>
+		   <div data-role="fieldcontain" data-content-theme="b">
+		     <fieldset data-role="controlgroup" data-type="horizontal">
+		       <legend>Preferred contact method:</legend>
+		       <input type="radio" name="radio-choice-b" id="radio-choice-c" value="on" checked="checked" />
+		       <label for="radio-choice-c">Phone</label>
+		       <input type="radio" name="radio-choice-b" id="radio-choice-d" value="off" />
+		       <label for="radio-choice-d">Email</label>
+		     </fieldset>
+		   </div>
+		   <ul class="block-grid two-up">
+		     <li><p><a href="#home" data-role="button" data-icon="arrow-l" data-direction="reverse" data-theme="a">Cancel</a></p></li>
+		     <li><p><a href="#" data-role="button" data-icon="check" data-theme="c">Submit</a></p></li>
+		   </ul>
+		 </form>
+		 =====  /CONTACT FORM  ===== -->
+	    
+	    <p><a href="index.html" data-role="button" data-transition="none" data-icon="home" data-theme="a">Home</a></p>
+	  </div><!-- /content -->
+        </div><!-- /contact -->
+
+      </div><!-- /row -->
+    </div><!-- /container -->
+  </body>
+</html>
