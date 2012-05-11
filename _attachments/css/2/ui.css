@@ -35,12 +35,12 @@
 	}
 	
 	.button.nice { 
-		background: #00a6fc url(../images/misc/button-gloss.png) repeat-x 0 -34px;
+		background: #00a6fc url(../../images/2/misc/button-gloss.png) repeat-x 0 -34px;
 		-moz-box-shadow: inset 0 1px 0 rgba(255,255,255,.5);
 		-webkit-box-shadow: inset 0 1px 0 rgba(255,255,255,.5);
 		text-shadow: 0 -1px 1px rgba(0,0,0,0.28);
-		background: #00a6fc url(../images/misc/button-gloss.png) repeat-x 0 -34px, -moz-linear-gradient(top, rgba(255,255,255,.4) 0%, transparent 100%);
-		background: #00a6fc url(../images/misc/button-gloss.png) repeat-x 0 -34px, -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,.4)), color-stop(100%,transparent));
+		background: #00a6fc url(../../images/2/misc/button-gloss.png) repeat-x 0 -34px, -moz-linear-gradient(top, rgba(255,255,255,.4) 0%, transparent 100%);
+		background: #00a6fc url(../../images/2/misc/button-gloss.png) repeat-x 0 -34px, -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,.4)), color-stop(100%,transparent));
 		border: 1px solid #0593dc;
 		-webkit-transition: background-color .15s ease-in-out;
 		-moz-transition: background-color .15s ease-in-out;
@@ -92,6 +92,9 @@
 	.nice.red.button		{ border: 1px solid #b90b0b;  }
 	.nice.white.button		{ border: 1px solid #cacaca; text-shadow: none !important; }
 	.nice.charcoal.button	{ border: 1px solid #000; }
+
+	/* Special Colors ---------- */
+	.racetrack.button 		{border: 2px solid #f3f3f3;background-color:#ff9900;}
 	
 	/* Hovers ---------- */
 	.button:hover 			{ background-color: #0192dd; color: #fff; }
@@ -169,7 +172,7 @@
 
 	.notice, .alert { 
 		position: relative;
-	    background: #222 url(../images/misc/button-overlay.png) repeat-x bottom;
+	    background: #222 url(../../images/2/misc/button-overlay.png) repeat-x bottom;
 	    width: 100%;
 	    margin: 10px 0;
 	    -moz-border-radius: 3px;
