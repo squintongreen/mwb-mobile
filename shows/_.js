@@ -9,7 +9,7 @@ function(doc, req) {
          interpolate : /\{\{(.+?)\}\}/g
      };
      */
-    template = template[doc.theme.name || 'black']
+    template = template[doc.theme.name || 'white']
 
     
     processTemplate = function(fileName){

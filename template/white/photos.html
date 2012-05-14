@@ -1,87 +1,83 @@
 <!DOCTYPE html>
 
 <html>
-<%= processTemplate('_head') %>
-<body>
-<script src="../2/js/jquery.js"></script>
-<script src="../2/js/jquery.mobile-1.0.1.min.js"></script>
-<script type="text/javascript" src="../2/js/klass.min.js"></script>
-<script type="text/javascript" src="../2/js/code.photoswipe-3.0.4.min.js"></script>
-<script type="text/javascript">
+  <%= processTemplate('_head') %>
+  <body>
+    <script type="text/javascript">
 
-  (function(window, PhotoSwipe){
-  
-    document.addEventListener('DOMContentLoaded', function(){
-    
+      (function(window, PhotoSwipe){
+      
+      document.addEventListener('DOMContentLoaded', function(){
+      
       var
-        options = {},
-        instance = PhotoSwipe.attach( window.document.querySelectorAll('#gallery a'), options );
-    
-    }, false);
-    
-    
-  }(window, window.Code.PhotoSwipe));
-  
-</script>
-<div class="container hide-on-phones">
-<div id="browser-alert" class="row">
-  <div class="ten columns centered">
-    <h2>Please view this website on your mobile phone.</h2>
-    <h4>Build your mobile website today with<br /><a href="http://www.scanshowsell.com">ScanShowSell.com</a></h4>
-  </div>
-</div>
-</div>
-
-<div class="container">
-	<div id="content-a" class="row">
-	    <div class="twelve columns">
-	        <header>
-	          <h3 class="site-name">Smith &amp; Sons Flooring</h3>
-	          <p class="tagline">Established in 1899</p>
-	        </header>
-	    </div>
+      options = {},
+      instance = PhotoSwipe.attach( window.document.querySelectorAll('#gallery a'), options );
+      
+      }, false);
+      
+      
+      }(window, window.Code.PhotoSwipe));
+      
+    </script>
+    <div class="container hide-on-phones">
+      <div id="browser-alert" class="row">
+        <div class="ten columns centered">
+          <h2>Please view this website on your mobile phone.</h2>
+          <h4>Build your mobile website today with<br /><a href="http://www.scanshowsell.com">ScanShowSell.com</a></h4>
+        </div>
+      </div>
     </div>
 
-	<div id="island-b" class="row">
-		<div id="about" class="twelve columns">
-			<img src="../images/2/head-about.png" alt="an image of a toolbox" title="About Us" />
-		    <h4>Gallery</h4>
-		    <hr />
-
-        <ul id="gallery" class="block-grid two-up">
-    
-    <!-- =====  IMAGES FOR THE GALLERY GO HERE (THUMBNAIL MUST BE 95px X 95px)  ===== -->
-    
-    <!--       The first URL points to the full size image.         The second URL is for the thumbnail.         -->
-        <li><a href="../images/2/full/001.jpg" rel="external"><img src="../images/2/thumb/001.jpg" alt="Image 001" /></a></li>
-        <li><a href="../images/2/full/002.jpg" rel="external"><img src="../images/2/thumb/002.jpg" alt="Image 002" /></a></li>
-        
-        <li><a href="../images/2/full/004.jpg" rel="external"><img src="../images/2/thumb/004.jpg" alt="Image 004" /></a></li>
-        <li><a href="../images/2/full/006.jpg" rel="external"><img src="../images/2/thumb/006.jpg" alt="Image 006" /></a></li>
-        
-        <li><a href="../images/2/full/008.jpg" rel="external"><img src="../images/2/thumb/008.jpg" alt="Image 008" /></a></li>
-        <li><a href="../images/2/full/009.jpg" rel="external"><img src="../images/2/thumb/009.jpg" alt="Image 009" /></a></li>
-      
-    <!-- =====  IMAGES FOR THE GALLERY GO HERE (THUMBNAIL MUST BE 95px X 95px)  ===== -->
-    
-        </ul>
-
-			<ul class="block-grid two-up">
-				<li><p><a href="services.html" class="nice blue medium button">Services</a></p></li>
-				<li><p><a href="areas.html" class="nice blue medium button">Service Area</a></p></li>
-			</ul>
-      <a href="index.html" class="nice white medium button">Home</a>
-		</div>
+    <div class="container">
+      <div id="content-a" class="row">
+	<div class="twelve columns">
+	  <header>
+	    <h3 class="site-name">Smith &amp; Sons Flooring</h3>
+	    <p class="tagline">Established in 1899</p>
+	  </header>
 	</div>
+      </div>
 
-    <footer>
-      <a href="http://www.scanshowsell.com" class="button radius racetrack-blue">Tap here to build your mobile site with ScanShowSell.</a>
-      <div id="island-f" class="row">
-        <div id="copyright" class="twelve columns">
-          <p>&copy;&nbsp;2012, Smith &amp; Sons Flooring</p>
-        </div><!-- /copyright -->
-      </div><!-- /island-c -->
-    </footer>
-</div><!-- /container -->
-</body>
+      <div id="island-b" class="row">
+	<div id="about" class="twelve columns">
+	  <img src="../images/white/head-about.png" alt="an image of a toolbox" title="About Us" />
+	  <h4>Gallery</h4>
+	  <hr />
+
+          <ul id="gallery" class="block-grid two-up">
+            
+            <!-- =====  IMAGES FOR THE GALLERY GO HERE (THUMBNAIL MUST BE 95px X 95px)  ===== -->
+            
+            <!--       The first URL points to the full size image.         The second URL is for the thumbnail.         -->
+            <li><a href="../images/white/full/001.jpg" rel="external"><img src="../images/white/thumb/001.jpg" alt="Image 001" /></a></li>
+            <li><a href="../images/white/full/002.jpg" rel="external"><img src="../images/white/thumb/002.jpg" alt="Image 002" /></a></li>
+            
+            <li><a href="../images/white/full/004.jpg" rel="external"><img src="../images/white/thumb/004.jpg" alt="Image 004" /></a></li>
+            <li><a href="../images/white/full/006.jpg" rel="external"><img src="../images/white/thumb/006.jpg" alt="Image 006" /></a></li>
+            
+            <li><a href="../images/white/full/008.jpg" rel="external"><img src="../images/white/thumb/008.jpg" alt="Image 008" /></a></li>
+            <li><a href="../images/white/full/009.jpg" rel="external"><img src="../images/white/thumb/009.jpg" alt="Image 009" /></a></li>
+            
+            <!-- =====  IMAGES FOR THE GALLERY GO HERE (THUMBNAIL MUST BE 95px X 95px)  ===== -->
+            
+          </ul>
+
+	  <ul class="block-grid two-up">
+	    <li><p><a href="services.html" class="nice blue medium button">Services</a></p></li>
+	    <li><p><a href="areas.html" class="nice blue medium button">Service Area</a></p></li>
+	  </ul>
+          <a href="index.html" class="nice white medium button">Home</a>
+	</div>
+      </div>
+
+      <footer>
+        <a href="http://www.scanshowsell.com" class="button radius racetrack-blue">Tap here to build your mobile site with ScanShowSell.</a>
+        <div id="island-f" class="row">
+          <div id="copyright" class="twelve columns">
+            <p>&copy;&nbsp;2012, Smith &amp; Sons Flooring</p>
+          </div><!-- /copyright -->
+        </div><!-- /island-c -->
+      </footer>
+    </div><!-- /container -->
+  </body>
 </html>

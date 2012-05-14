@@ -24,7 +24,7 @@
     #list-panel li a      		{
 				                 margin:0;
 				                 padding:10px 0 10px 80px;
-				                 background-image:url('../images/list-sprite.png');
+				                 background-image:url('../../images/blue/list-sprite.png');
 				                 background-repeat:no-repeat;
 				                 color:#292929;
 				                 text-decoration:none;

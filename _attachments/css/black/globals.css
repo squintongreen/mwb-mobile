@@ -95,15 +95,15 @@
 								
 		Delete this line when done!	  =====  PLACE LOGO IMAGE HERE (MUST BE 320px X 100px)  =====  Delete this line when done!  */
 								    
-								background: url('../../images/1/dark_tire.png') left top repeat, rgb(134,143,152);
+								background: url('../../images/black/dark_tire.png') left top repeat, rgb(134,143,152);
 								
 								/* Dark Tire & Gradient, Grey 3D  */
-								background: url('../../images/1/dark_tire.png') left top repeat, -moz-linear-gradient(top, rgba(134,143,152,1) 0%, rgba(69,75,78,1) 100%);
-								background: url('../../images/1/dark_tire.png') left top repeat, -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(134,143,152,1)), color-stop(100%,rgba(69,75,78,1)));
-								background: url('../../images/1/dark_tire.png') left top repeat, -webkit-linear-gradient(top, rgba(134,143,152,1) 0%,rgba(69,75,78,1) 100%);
-								background: url('../../images/1/dark_tire.png') left top repeat, -o-linear-gradient(top, rgba(134,143,152,1) 0%,rgba(69,75,78,1) 100%);
-								background: url('../../images/1/dark_tire.png') left top repeat, -ms-linear-gradient(top, rgba(134,143,152,1) 0%,rgba(69,75,78,1) 100%);
-								background: url('../../images/1/dark_tire.png') left top repeat, linear-gradient(top, rgba(134,143,152,1) 0%,rgba(69,75,78,1) 100%);
+								background: url('../../images/black/dark_tire.png') left top repeat, -moz-linear-gradient(top, rgba(134,143,152,1) 0%, rgba(69,75,78,1) 100%);
+								background: url('../../images/black/dark_tire.png') left top repeat, -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(134,143,152,1)), color-stop(100%,rgba(69,75,78,1)));
+								background: url('../../images/black/dark_tire.png') left top repeat, -webkit-linear-gradient(top, rgba(134,143,152,1) 0%,rgba(69,75,78,1) 100%);
+								background: url('../../images/black/dark_tire.png') left top repeat, -o-linear-gradient(top, rgba(134,143,152,1) 0%,rgba(69,75,78,1) 100%);
+								background: url('../../images/black/dark_tire.png') left top repeat, -ms-linear-gradient(top, rgba(134,143,152,1) 0%,rgba(69,75,78,1) 100%);
+								background: url('../../images/black/dark_tire.png') left top repeat, linear-gradient(top, rgba(134,143,152,1) 0%,rgba(69,75,78,1) 100%);
 								filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#868f98', endColorstr='#454b4e',GradientType=0 );
 								/* End Gradient - Grey 3D  */
 								}
